@@ -6,3 +6,7 @@ const c = 3;
 const d = 1;
 
 console.log(a+b);
+
+
+
+hey();
