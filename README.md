@@ -7,6 +7,8 @@ const d = 1;
 
 console.log(a+b);
 
+console.log("hey you idiot");
+
 // hey you idiot
 
 
