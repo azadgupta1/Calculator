@@ -9,6 +9,6 @@ console.log(a+b);
 
 console.log("hey you idiot");
 
-// hey you idiot
+
 
 hey();
