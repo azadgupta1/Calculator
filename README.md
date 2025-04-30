@@ -10,6 +10,8 @@ const num4 = 1;
 // csn = 3;
 // ok do it
 
+fix it ;
+
 // Function to perform addition
 function add(x, y) {
     if (typeof x !== 'number' || typeof y !== 'number') {
