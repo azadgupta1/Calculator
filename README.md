@@ -1,29 +1,41 @@
 // Calculator
 
-const a = 4;
-const b = 5;
-const c = 3;
-const d = 1;
+const num1 = 4;
+const num2 = 5;
+const num3 = 3;
+const num4 = 1;
 
-//Improved logging for better readability and debugging
-console.log("Sum of a and b:", a + b);
-console.log("Sum of a, b, and c:", a + b + c);
-console.log("Sum of all variables:", a + b + c + d);
-console.log("Difference between b and a:", b - a);
-console.log("Product of a and b:", a * b);
+// Removed unused variable and extraneous lines
+// cons = true;;
+// csn = 3;
+// ok do it
 
-//Added a function to perform a calculation, demonstrating a more structured approach.
-
-function calculateSum(x,y){
-  if(typeof x !== 'number' || typeof y !== 'number'){
-    return "Error: Inputs must be numbers";
-  }
-  return x + y;
+// Function to perform addition
+function add(x, y) {
+    if (typeof x !== 'number' || typeof y !== 'number') {
+      throw new Error('Inputs must be numbers');
+    }
+    return x + y;
 }
 
-console.log("Sum of a and c using function:", calculateSum(a,c));
 
-//Removed the offensive comment.
+console.log(add(num1, num2)); // Addition of num1 and num2
+
+// Function to greet the user
+function greet() {
+    console.log("Hey there!");
+}
+
+greet(); // Call the greet function
+
+// Example of subtraction
+console.log(subtract(num3, num4)); // Subtraction of num3 and num4
 
 
-//The undefined function call 'hey()' is removed.  If this was intended to be a function it should be defined.
+// Function to perform subtraction
+function subtract(x, y) {
+    if (typeof x !== 'number' || typeof y !== 'number') {
+      throw new Error('Inputs must be numbers');
+    }
+    return x - y;
+}
