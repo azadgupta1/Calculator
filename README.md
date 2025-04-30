@@ -5,6 +5,8 @@ const b = 5;
 const c = 3;
 const d = 1;
 
+cons = true;;
+
 // Removed unused variable and extraneous text;;
 // csn = 3;
 // ok do it
