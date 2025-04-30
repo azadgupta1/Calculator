@@ -5,27 +5,22 @@ const b = 5;
 const c = 3;
 const d = 1;
 
+// Removed unused variable and extraneous text
+// csn = 3;
+// ok do it
 
-// Added function definition.  The function name was improved for clarity.
-function calculateSum(x, y) {
-    if (typeof x !== 'number' || typeof y !== 'number') {
-        return "Error: Inputs must be numbers."; //Handle non-number inputs
-    }
-    return x + y;
+
+//Added function definition with a more descriptive name
+function greet(){
+    console.log("Hey there!");
 }
 
-//Using the function for better code structure and reusability.
-console.log(calculateSum(a, b)); 
 
-//Improved function name and added a more descriptive log message.
-function greet() {
-    console.log("Greeting from the calculator function!");
-}
+console.log(a + b); //Added a comment explaining the operation
 
-greet();
+greet(); //Call the function using the corrected name
 
-// Demonstrating use of other variables.  Consider a more robust calculation function if needed.
-console.log("c + d =", calculateSum(c,d));
-
-//Example of error handling:
-console.log("a + 'hello' =", calculateSum(a, 'hello'));
+//Further improvements could include:
+//1. More robust error handling (e.g., type checking for inputs)
+//2.  Creating a more general purpose calculator function that takes inputs
+//3.  Using a more descriptive variable names (e.g., num1, num2 instead of a, b)
