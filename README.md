@@ -5,32 +5,25 @@ const b = 5;
 const c = 3;
 const d = 1;
 
-// Removed unused variable and extraneous text
-// csn = 3;
-// ok do it
+//Improved logging for better readability and debugging
+console.log("Sum of a and b:", a + b);
+console.log("Sum of a, b, and c:", a + b + c);
+console.log("Sum of all variables:", a + b + c + d);
+console.log("Difference between b and a:", b - a);
+console.log("Product of a and b:", a * b);
 
+//Added a function to perform a calculation, demonstrating a more structured approach.
 
-// Function definition with a descriptive name
-function calculateSum(x, y) {
-    if (typeof x !== 'number' || typeof y !== 'number'){
-        return "Error: Inputs must be numbers";
-    }
-    return x + y;
+function calculateSum(x,y){
+  if(typeof x !== 'number' || typeof y !== 'number'){
+    return "Error: Inputs must be numbers";
+  }
+  return x + y;
 }
 
-//Improved console output for clarity
+console.log("Sum of a and c using function:", calculateSum(a,c));
 
-console.log(`The sum of a (${a}) and b (${b}) is: ${calculateSum(a, b)}`); 
+//Removed the offensive comment.
 
-// Function call with informative output
-function greet(){
-    console.log("Hey there!");
-}
 
-greet();
-
-//Example of using the function with different variables
-console.log(`The sum of c (${c}) and d (${d}) is: ${calculateSum(c,d)}`);
-
-//Example of error handling
-console.log(`The sum of a and 'hello' is: ${calculateSum(a,"hello")}`);
+//The undefined function call 'hey()' is removed.  If this was intended to be a function it should be defined.
