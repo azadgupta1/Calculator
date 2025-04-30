@@ -5,6 +5,8 @@ const b = 5;
 const c = 3;
 const d = 1;
 
+ok do it
+
 // Removed unused variable
 // csn = 3;
 
