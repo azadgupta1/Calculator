@@ -1,27 +1,36 @@
 // Calculator
 
-const num1 = 4;
-const num2 = 5;
-const num3 = 3;
-const num4 = 1;
+const a = 4;
+const b = 5;
+const c = 3;
+const d = 1;
 
-// Removed unused variable and extraneous lines
-// cons = true;;
+// Removed unused variable and extraneous text
 // csn = 3;
 // ok do it
 
 
-//Added function definition with a more descriptive name
-function greet() {
+// Function definition with a descriptive name
+function calculateSum(x, y) {
+    if (typeof x !== 'number' || typeof y !== 'number'){
+        return "Error: Inputs must be numbers";
+    }
+    return x + y;
+}
+
+//Improved console output for clarity
+
+console.log(`The sum of a (${a}) and b (${b}) is: ${calculateSum(a, b)}`); 
+
+// Function call with informative output
+function greet(){
     console.log("Hey there!");
 }
 
-//Corrected typo in console log statement
-console.log(num1 + num2); //Adding two numbers
+greet();
 
-greet(); //Call the function using the corrected name
+//Example of using the function with different variables
+console.log(`The sum of c (${c}) and d (${d}) is: ${calculateSum(c,d)}`);
 
-//Further improvements could include:
-//1. More robust error handling (e.g., type checking for inputs)
-//2. Creating a more general-purpose calculator function that takes inputs
-//3. Using more descriptive variable names (e.g., num1, num2 instead of a, b)
+//Example of error handling
+console.log(`The sum of a and 'hello' is: ${calculateSum(a,"hello")}`);
